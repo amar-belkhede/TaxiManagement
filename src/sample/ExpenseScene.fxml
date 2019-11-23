@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ExpenseSceneController">
+   <children>
+      <Text layoutX="235.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Expense">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="eDate" layoutX="297.0" layoutY="104.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="servDescrip" layoutX="300.0" layoutY="136.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="servAmount" layoutX="300.0" layoutY="169.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="tNum" layoutX="300.0" layoutY="202.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="dName" layoutX="300.0" layoutY="234.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="183.0" layoutY="108.0" text="Date" />
+      <Label layoutX="183.0" layoutY="140.0" text="Description" />
+      <Label layoutX="183.0" layoutY="173.0" text="Amount" />
+      <Label layoutX="183.0" layoutY="206.0" text="Taxi Number" />
+      <Label layoutX="183.0" layoutY="238.0" text="Driver" />
+      <Button fx:id="addServBtn" layoutX="389.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnAddServ" text="Add Expense" />
+      <TableView fx:id="expenseTableView" layoutX="8.0" layoutY="325.0" prefHeight="258.0" prefWidth="583.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#deleteExpense" text="delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Label fx:id="warnMsg" layoutX="300.0" layoutY="269.0" prefHeight="17.0" prefWidth="174.0" textFill="#eb0909" />
+   </children>
+</AnchorPane>

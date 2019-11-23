@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OrderSceneController">
+   <children>
+      <Label layoutX="183.0" layoutY="103.0" text="Date" />
+      <Label layoutX="181.0" layoutY="141.0" text="taxi no" />
+      <Label layoutX="182.0" layoutY="210.0" text="Pickup location" />
+      <Label layoutX="183.0" layoutY="288.0" text="Amount" />
+      <Label layoutX="180.0" layoutY="175.0" text="Customer name" />
+      <Label layoutX="181.0" layoutY="248.0" text="Destination" />
+      <DatePicker fx:id="oDate" layoutX="303.0" layoutY="99.0" onAction="#checkAvail" />
+      <TextField fx:id="cName" layoutX="303.0" layoutY="171.0" />
+      <TextField fx:id="pLoc" layoutX="303.0" layoutY="206.0" />
+      <TextField fx:id="dLoc" layoutX="303.0" layoutY="244.0" />
+      <TextField fx:id="oAmount" layoutX="303.0" layoutY="284.0" />
+      <Button fx:id="submitBtn" layoutX="400.0" layoutY="339.0" mnemonicParsing="false" onAction="#submitOrder" text="Submit" />
+      <Text layoutX="233.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Booking">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="warnMsg" layoutX="182.0" layoutY="331.0" textFill="#e43f3f" />
+      <ComboBox fx:id="cTNumList" layoutX="303.0" layoutY="137.0" onAction="#checkDate" prefWidth="150.0" />
+      <TableView fx:id="oTableView" layoutX="7.0" layoutY="387.0" prefHeight="221.0" prefWidth="670.0">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#deleteOrder" text="delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateOrder" text="update" />
+               </items>
+            </ContextMenu>
+         </contextMenu></TableView>
+   </children>
+</AnchorPane>

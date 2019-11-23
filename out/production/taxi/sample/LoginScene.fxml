@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginSceneController">
+   <children>
+      <Label layoutX="197.0" layoutY="109.0" text="Login Id" />
+      <Label layoutX="197.0" layoutY="143.0" text="Password" />
+      <TextField fx:id="loginId" layoutX="292.0" layoutY="105.0" />
+      <TextField fx:id="password" layoutX="292.0" layoutY="139.0" />
+      <Button layoutX="390.0" layoutY="234.0" mnemonicParsing="false" onAction="#signUp" text="Sign up" />
+      <Label layoutX="300.0" layoutY="46.0" text="Login">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="warnMsg" layoutX="292.0" layoutY="175.0" prefHeight="17.0" prefWidth="149.0" textFill="#f51a1a" />
+   </children>
+</AnchorPane>

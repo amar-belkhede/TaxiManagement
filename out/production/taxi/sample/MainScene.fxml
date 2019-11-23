@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="rootLayout" fx:controller="sample.MainSceneController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToggleButton fx:id="orderBtn" layoutX="246.0" layoutY="106.0" mnemonicParsing="false" onAction="#setOrderScene" text="Manage Order" />
+      <ToggleButton fx:id="registerDriverBtn" layoutX="245.0" layoutY="167.0" mnemonicParsing="false" onAction="#setDriverScene" text="Register Driver" />
+      <ToggleButton fx:id="registerTaxiBtn" layoutX="251.0" layoutY="221.0" mnemonicParsing="false" onAction="#setRegisterScene" text="Register Taxi" />
+      <ToggleButton fx:id="expenseBtn" layoutX="251.0" layoutY="281.0" mnemonicParsing="false" onAction="#setExpenceScene" text="Add Expense" />
+      <Text layoutX="200.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taxi Management" textAlignment="CENTER" wrappingWidth="185.681640625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

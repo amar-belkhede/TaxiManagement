@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainSceneController">
+   <center>
+      <AnchorPane prefHeight="485.0" prefWidth="456.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="144.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label />
+            <Label prefHeight="17.0" prefWidth="100.0" text="Taxi ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="156.0" text="management">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="100.0" text="system">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="warnMsg" prefHeight="34.0" prefWidth="141.0" textFill="#d30f0f">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="loginBtn" mnemonicParsing="false" onAction="#setLoginScene" prefHeight="25.0" prefWidth="141.0" text="Login" />
+            <Label />
+            <ToggleButton fx:id="orderBtn" mnemonicParsing="false" onAction="#setOrderScene" prefHeight="25.0" prefWidth="142.0" text="Manage Order" />
+            <Label />
+            <ToggleButton fx:id="expenseBtn" mnemonicParsing="false" onAction="#setExpenceScene" prefHeight="25.0" prefWidth="143.0" text="Add Expense" />
+            <Label />
+            <ToggleButton fx:id="registerTaxiBtn" mnemonicParsing="false" onAction="#setRegisterScene" prefHeight="25.0" prefWidth="146.0" text="Register Taxi" />
+            <Label />
+            <ToggleButton fx:id="registerDriverBtn" mnemonicParsing="false" onAction="#setDriverScene" prefHeight="25.0" prefWidth="152.0" text="Register Driver" />
+            <Label />
+            <ToggleButton mnemonicParsing="false" onAction="#setLogoutScene" prefHeight="25.0" prefWidth="143.0" text="Logout" />
+            <Label />
+            <ToggleButton fx:id="createAccountBtn" mnemonicParsing="false" onAction="#setCreateAccountScene" prefHeight="25.0" prefWidth="150.0" text="Create Account" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
